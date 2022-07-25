@@ -20,12 +20,9 @@ import {
 // import jsonApiData from '../../../assets/weatherData.json';
 
 export default function useWeatherApiData() {
-	// * Would use an environment variable for the apiKey and put the file in .gitignore.
-	// * But that does not hide the apiKey though, it's still visible in the bundle.js file.
+	// ! ApiKey is still visible in the bundle.js file.
 
-	// const envApiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY
-	const apiKey = '24da46cc08837844e94bef96cc926761';
-
+	const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
 	const [isLoading, setIsLoading] = useState(true);
 	const [currentWeatherData, setCurrentWeatherData] =
 		useState<CurrentWeatherData>();
