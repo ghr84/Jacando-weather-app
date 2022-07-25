@@ -1,0 +1,20 @@
+@import '../../../../../../styles/Variables.scss';
+
+article#weekly-forecast-container {
+	display: flex;
+	padding: 1.5rem 1rem 3rem 1rem;
+	div.forecast-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		time.shorthand-day-forecast {
+			margin-bottom: 0.5rem;
+		}
+		span.min-max-temp {
+			color: $grey;
+		}
+	}
+	div.forecast-item:nth-child(n + 2) {
+		margin-left: 0.8rem;
+	}
+}

@@ -1,0 +1,15 @@
+div#dashboard-wrapper {
+	min-height: 100vh;
+	background-image: url('../../../../assets/images/hvar.jpg');
+	background-repeat: no-repeat;
+	object-fit: cover;
+	background-position: 50% 50%;
+	div#background-overlay {
+		min-height: 100vh;
+		background-color: rgba(0, 0, 0, 0.427);
+	}
+	main {
+		display: flex;
+		justify-content: space-between;
+	}
+}

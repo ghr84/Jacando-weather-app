@@ -1,0 +1,22 @@
+@import '../../../../../../styles/Placeholders.scss';
+@import '../../../../../../styles/Variables.scss';
+@import '../../../../../../styles/mixins.scss';
+
+header#dashboard-header {
+	@include width-height(100%, null);
+	@include flex-direction-justify(null, space-between);
+	h1.logo {
+		color: $white;
+	}
+	button#main-burger-menu {
+		div.burger-handle {
+			@include width-height(25px, 3px);
+			margin-bottom: 6px;
+			border-radius: 4px;
+			background-color: $white;
+		}
+		div.burger-handle:last-child {
+			@include width-height(17px, null);
+		}
+	}
+}

@@ -1,0 +1,26 @@
+article#temp-location-component {
+	margin-bottom: 4rem;
+	div.skeleton-container {
+		display: flex;
+		div.loading-skeleton {
+			height: 160px;
+			width: 160px;
+			background: #ffffff45;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			border-radius: 8px;
+		}
+	}
+
+	div#icon-temp-container {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 1rem;
+		svg {
+			margin-bottom: 1rem;
+		}
+		h2 {
+			margin-left: 0.8rem;
+		}
+	}
+}

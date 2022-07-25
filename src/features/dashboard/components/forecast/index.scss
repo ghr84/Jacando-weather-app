@@ -1,0 +1,15 @@
+@import '../../../../styles/Mixins.scss';
+@import '../../../../styles/Variables.scss';
+
+article#forecast-component {
+	min-height: 100vh;
+	padding: 3rem 0rem 0rem 0rem;
+	background-color: $blackOpacity;
+	@include flex-direction-justify(column, space-between);
+	header#forecast-header {
+		padding: 0rem 0.5rem 2rem 1.5rem;
+	}
+}
+article.forecast-centered {
+	margin: 0 auto;
+}

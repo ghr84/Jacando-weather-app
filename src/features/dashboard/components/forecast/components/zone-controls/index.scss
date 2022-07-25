@@ -1,0 +1,22 @@
+@import '../../../../../../styles/Variables.scss';
+div#zone-controls {
+	div#zone-buttons-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	div#zone-buttons-container button:nth-child(1) {
+		width: 40%;
+		background-color: #00000024;
+		span.body-text-small-bold {
+			margin-left: 1.5rem;
+		}
+	}
+	div#zone-buttons-container button:nth-child(2) {
+		width: 60%;
+		background-color: #aeaeae36;
+		flex-direction: row-reverse;
+		span.body-text-small-bold {
+			margin-right: 1.5rem;
+		}
+	}
+}

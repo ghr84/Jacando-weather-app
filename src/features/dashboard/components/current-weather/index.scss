@@ -1,0 +1,11 @@
+@import '../../../../styles/mixins.scss';
+
+div.current-weather-container {
+	min-height: 100vh;
+	@include flex-direction-justify(column, space-between);
+	width: 70%;
+	padding: 3rem 3rem 2rem 3rem;
+}
+div.hidden {
+	display: none;
+}

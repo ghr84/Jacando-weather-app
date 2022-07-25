@@ -1,0 +1,68 @@
+@import '../../../../../../styles/Variables.scss';
+@import '../../../../../../styles/Mixins.scss';
+
+article#graph-widget {
+	header#graph-header {
+		padding: 1rem 0.5rem 2rem 1.5rem;
+		div#title-button-container {
+			@include flex-direction-justify(null, space-between);
+			align-items: center;
+			button.widget-handlebar {
+				div.button-handle {
+					@include width-height(16px, 2px);
+					background-color: $white;
+					border-radius: 8px;
+				}
+			}
+			button.widget-handlebar div:nth-child(1) {
+				margin-bottom: 0.3rem;
+			}
+		}
+		div#weather-temp-container {
+			display: flex;
+			align-items: center;
+			.body-text-med {
+				color: $grey;
+			}
+		}
+	}
+	div#graph-frame {
+		border-bottom: 0.5px $grey solid;
+	}
+
+	// Nav
+
+	menu#forecast-nav {
+		display: flex;
+		padding: 0 0 0.35rem 1.5rem;
+		position: relative;
+		li.nav-item {
+			margin-bottom: 0;
+			position: relative;
+			z-index: 1;
+			button {
+				margin-bottom: 0.25rem;
+				cursor: pointer;
+			}
+			span.active-underline {
+				height: 2px;
+				width: 100%;
+				display: block;
+				background: $white;
+				border-radius: 8px;
+			}
+		}
+		div#bottom-border {
+			height: 0.8px;
+			width: 100%;
+			background: $grey;
+			position: absolute;
+			bottom: 7px;
+			right: 0;
+			z-index: 0;
+		}
+	}
+	menu#forecast-nav li:nth-child(-n + 2) {
+		margin-right: 2.3rem;
+	}
+}

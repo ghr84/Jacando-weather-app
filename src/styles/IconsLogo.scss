@@ -1,0 +1,35 @@
+@import './Variables.scss';
+
+// Logo
+
+.logo {
+	font-size: 1.7rem;
+	font-family: Ascender-Bold;
+	color: $white;
+}
+
+// Icons
+
+.icon-lg {
+	height: 64px;
+	width: 64px;
+	color: $white;
+}
+
+.icon-med {
+	height: 32px;
+	width: 32px;
+	color: $grey;
+}
+
+.icon-sm {
+	height: 24px;
+	width: 24px;
+	color: $grey;
+}
+
+.icon-smaller {
+	height: 18px;
+	width: 18px;
+	color: $white;
+}

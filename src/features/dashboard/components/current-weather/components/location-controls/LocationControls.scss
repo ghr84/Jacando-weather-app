@@ -1,0 +1,16 @@
+@import '../../../../../../styles/Mixins.scss';
+@import '../../../../../../styles/Variables.scss';
+div#location-controls {
+	@include flex-direction-justify(null, space-between);
+	max-width: 175px;
+	div.control {
+		@include width-height(20px, 1px);
+		background-color: $grey;
+		border-radius: 8px;
+		cursor: pointer;
+	}
+	div.control:nth-child(2) {
+		width: 37px;
+		background-color: $white;
+	}
+}

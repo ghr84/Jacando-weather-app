@@ -1,0 +1,10 @@
+@mixin width-height($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin flex-direction-justify($direction, $justify) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+}

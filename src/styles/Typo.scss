@@ -1,0 +1,58 @@
+@import './Variables.scss';
+@import './FontFace.scss';
+
+// Headings
+
+.hero-heading-large {
+	font-size: 120px;
+	font-family: Ascender-Bold;
+	color: $white;
+}
+.hero-heading-med {
+	font-size: 80px;
+	font-family: Ascender-Bold;
+	color: $white;
+}
+.heading-reg {
+	font-size: 40px;
+	font-family: Ascender-Bold;
+	color: $white;
+}
+.heading-small {
+	font-size: 20px;
+	font-family: Ascender-Bold;
+	margin-bottom: 0.35rem;
+	color: $white;
+}
+
+// Body
+
+.body-text-small {
+	font-size: 12px;
+	font-family: Ascender-Regular;
+	color: $white;
+	line-height: 1.4;
+}
+
+.body-text-small-bold {
+	font-size: 12px;
+	font-family: Ascender-Bold;
+	color: $white;
+}
+
+.body-text-reg {
+	font-size: 18px;
+	font-family: Ascender-Regular;
+	color: $white;
+}
+
+.body-text-med {
+	font-size: 14px;
+	font-family: Ascender-Regular;
+	color: $white;
+}
+.body-text-med-bold {
+	font-size: 14px;
+	font-family: Ascender-Bold;
+	color: $white;
+}
