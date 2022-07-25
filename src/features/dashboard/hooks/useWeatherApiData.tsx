@@ -20,8 +20,11 @@ import {
 // import jsonApiData from '../../../assets/weatherData.json';
 
 export default function useWeatherApiData() {
-	// ! Api-key is still visible in bundle.js that is served in the browser.
-	// ! Create a small back-end?
+	// * Would use an environment variable for the apiKey and put the file in .gitignore.
+	// * But that does not hide the apiKey though, it's still visible in the bundle.js file.
+
+	// const envApiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY
+	const apiKey = '24da46cc08837844e94bef96cc926761';
 
 	const [isLoading, setIsLoading] = useState(true);
 	const [currentWeatherData, setCurrentWeatherData] =
@@ -37,7 +40,7 @@ export default function useWeatherApiData() {
 				lang: 'sp, es',
 				exclude: 'minutely,hourly,alerts',
 				getUrl: function () {
-					return `https://api.openweathermap.org/data/2.5/onecall?lat=${config.lat}&lon=${config.lon}&units=metric&exclude=${config.exclude}&appid=${process.env.REACT_APP_OPEN_WEATHER_API_KEY}`;
+					return `https://api.openweathermap.org/data/2.5/onecall?lat=${config.lat}&lon=${config.lon}&units=metric&exclude=${config.exclude}&appid=${apiKey}`;
 				},
 			};
 			const res = await axios.get(config.getUrl());
