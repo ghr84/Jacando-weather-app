@@ -3,7 +3,7 @@
 
 ## Npm will not install the packages due to incompatibility with React 18 +
 
-And use
+And ofcourse use
 
 ### `npm start`
 
